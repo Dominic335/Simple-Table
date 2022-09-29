@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border-spacing: 0 15px;
+}
+
+table th {
+    padding: 10px;
+}
+
+table td{
+    padding: 10px;
+}
+
+.rowWrap {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 100px;
+    padding: 10px;
+}
+
+.wrapper {
+    padding: 50px 25px;
+}
+
+.myBtn {
+    width: 100%;
+    border: 2px solid black;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    background-color: antiquewhite;
+}
+
+.moduloContainer {
+    display: none;
+    border: 2px solid black;
+    padding: 5px;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+}
+
+.moduloContainer.active {
+    display: block;
+}
+
+.moduloWrapper {
+    margin: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    margin: 20px 10px;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 15px;
+}
+
+.moduloBtn {
+    padding: 5px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.moduloBtn:hover {
+    background-color: antiquewhite;
+}
+
+.moduloData {
+    border: 2px solid black;
+    padding: 2px;
+    float: right;
+    min-width: 150px;
+    max-width: auto;
+}
+
+.divBtn {
+    text-align: center;
+    margin: 20px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
